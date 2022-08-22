@@ -5,12 +5,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Select Best Five</title>
+  <!-- bootstrap link  -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css">
+    <!-- css link  -->
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
+  <!-- header section start  -->
   <header>
     <div id="carouselExampleSlidesOnly" class="carousel slide " data-bs-ride="carousel">
       <div class="carousel-inner bg-dark ">
@@ -23,17 +26,20 @@
       </div>
     </div>
   </header>
+  <!-- header section end -->
+
   <!-- main section start -->
   <main>
+    <!-- players section  -->
     <section class="container pt-5">
       <div class="row row-cols-1 row-cols-lg-4 row-cols-md-3 g-4">
         <div class="col" style="height: 375px; width:264px;">
           <div class="card">
             <img src="./images/plyers/messi.png" class="card-img-top img-fluid " alt="...">
             <div class="card-body text-center">
-              <h5 class="card-title">Leonel messi</h5>
+              <h5 id="player-messi" class="card-title">Leonel messi</h5>
               <p class="card-text">64 Goal . 120 Assist</p>
-              <button id="btn-select" class=" btn btn-primary w-100 fw-bold">Select</button>
+              <button id="btn-messi" class=" btn btn-primary w-100 fw-bold">Select</button>
             </div>
           </div>
         </div>
@@ -57,8 +63,10 @@
             </div>
           </div>
         </div>
+         <!-- player selection  -->
         <div id="best-five" class="col bg-black text-white text-center pt-4 ">
           <h4 class="">Best Five</h4>
+          <h5 id="display-player"></h5>
         </div>
       </div>
       <div class="row row-cols-1 row-cols-lg-4 row-cols-md-3 g-4">
@@ -74,9 +82,9 @@
         </div>
         <div class="col" style="height: 375px; width:264px;">
           <div class="card">
-            <img src="./images/plyers/neymar.png" class="card-img-top" alt="...">
+            <img src="./images/plyers/renato.png" class="card-img-top" alt="...">
             <div class="card-body text-center">
-              <h5 class="card-title">Neymar Jr</h5>
+              <h5 class="card-title">Renato Sanches</h5>
               <p class="card-text">36 Goal . 120 Assist</p>
               <button id="btn-select" class=" btn btn-primary w-100 fw-bold">Select</button>
             </div>
@@ -84,9 +92,9 @@
         </div>
         <div class="col" style="height: 375px; width:264px;">
           <div class="card">
-            <img src="./images/plyers/kylian (2).png" class="card-img-top" alt="...">
+            <img src="./images/plyers/sergio.png" class="card-img-top" alt="...">
             <div class="card-body text-center">
-              <h5 class="card-title">Kylian Mbappé</h5>
+              <h5 class="card-title">Sergio Ramos</h5>
               <p class="card-text">36 Goal . 120 Assist</p>
               <button id="btn-select" class=" btn btn-primary w-100 fw-bold">Select</button>
             </div>
@@ -103,6 +111,9 @@
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
 </body>
+<!-- javascript link  -->
+<script src="./js/utilities.js"></script>
+<script src="./js/bestFive.js"></script>
 <footer class="bg-black text-center p-5 text-white">
   <h6>Copyright@2025All</h6>
 </footer>
