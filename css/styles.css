@@ -5,9 +5,13 @@
     margin-left: 20px;
 }
 #calculate{
-    height: 325px;
+    height: 370px;
     border-radius: 5px;
     width: 260px;
     margin-left: 20px;
 
+}
+.input-class{
+    height: 30px;
+    width: 150px;
 }

@@ -37,7 +37,7 @@
           <div class="card">
             <img src="./images/plyers/messi.png" class="card-img-top img-fluid " alt="...">
             <div class="card-body text-center">
-              <h5 id="player-messi" class="card-title">Leonel messi</h5>
+              <h5 id="player-title-messi" class="card-title">Leonel messi</h5>
               <p class="card-text">64 Goal . 120 Assist</p>
               <button id="btn-messi" class=" btn btn-primary w-100 fw-bold">Select</button>
             </div>
@@ -47,9 +47,9 @@
           <div class="card">
             <img src="./images/plyers/neymar.png" class="card-img-top" alt="...">
             <div class="card-body text-center">
-              <h5 class="card-title">Neymar Jr</h5>
+              <h5 id = "player-title-neymar"class="card-title">Neymar Jr</h5>
               <p class="card-text">36 Goal . 120 Assist</p>
-              <button id="btn-select" class=" btn btn-primary w-100 fw-bold">Select</button>
+              <button id="btn-neymar" class=" btn btn-primary w-100 fw-bold">Select</button>
             </div>
           </div>
         </div>
@@ -57,16 +57,18 @@
           <div class="card">
             <img src="./images/plyers/kylian (2).png" class="card-img-top" alt="...">
             <div class="card-body text-center">
-              <h5 class="card-title">Kylian Mbappé</h5>
+              <h5 id="player-title-kylian" class="card-title">Kylian Mbappé</h5>
               <p class="card-text">36 Goal . 120 Assist</p>
-              <button id="btn-select" class=" btn btn-primary w-100 fw-bold">Select</button>
+              <button id="btn-kylian" class=" btn btn-primary w-100 fw-bold">Select</button>
             </div>
           </div>
         </div>
          <!-- player selection  -->
-        <div id="best-five" class="col bg-black text-white text-center pt-4 ">
-          <h4 class="">Best Five</h4>
-          <h5 id="display-player"></h5>
+        <div id="best-five" class="col bg-black text-white pt-4 ">
+          <h4 class="text-center">Selected-V</h4>
+          <ol id="selective-player">
+            
+          </ol>
         </div>
       </div>
       <div class="row row-cols-1 row-cols-lg-4 row-cols-md-3 g-4">
@@ -74,9 +76,9 @@
           <div class="card">
             <img src="./images/plyers/vitor.png" class="card-img-top img-fluid " alt="...">
             <div class="card-body text-center">
-              <h5 class="card-title">Vítor Machado</h5>
+              <h5 id="player-title-vitor" class="card-title">Vítor Machado</h5>
               <p class="card-text">64 Goal . 120 Assist</p>
-              <button id="btn-select" class=" btn btn-primary w-100 fw-bold">Select</button>
+              <button id="btn-vitor" class=" btn btn-primary w-100 fw-bold">Select</button>
             </div>
           </div>
         </div>
@@ -84,9 +86,9 @@
           <div class="card">
             <img src="./images/plyers/renato.png" class="card-img-top" alt="...">
             <div class="card-body text-center">
-              <h5 class="card-title">Renato Sanches</h5>
+              <h5 id="player-title-renato" class="card-title">Renato Sanches</h5>
               <p class="card-text">36 Goal . 120 Assist</p>
-              <button id="btn-select" class=" btn btn-primary w-100 fw-bold">Select</button>
+              <button id="btn-renato" class=" btn btn-primary w-100 fw-bold">Select</button>
             </div>
           </div>
         </div>
@@ -94,14 +96,36 @@
           <div class="card">
             <img src="./images/plyers/sergio.png" class="card-img-top" alt="...">
             <div class="card-body text-center">
-              <h5 class="card-title">Sergio Ramos</h5>
+              <h5 id="player-title-sergio" class="card-title">Sergio Ramos</h5>
               <p class="card-text">36 Goal . 120 Assist</p>
-              <button id="btn-select" class=" btn btn-primary w-100 fw-bold">Select</button>
+              <button id="btn-sergio" class=" btn btn-primary w-100 fw-bold">Select</button>
             </div>
           </div>
         </div>
-        <div id="calculate" class="col bg-black text-white text-center pt-4 ">
-          <h4 class="">Best Five</h4>
+        <div id="calculate" class="col bg-black text-white pt-4 text-center">
+          <h4 class="text-center">Budget</h4>
+          <div class="d-flex justify-content-around mt-2">
+            <p class="text-secondary">Per Player</p>
+            <input class="input-class" type="text">
+          </div>
+          <button id="btn-calculation" class="mt-2 py-1 px-5 bg-primary text-white">calculate</button>
+          <div class="d-flex justify-content-around mt-2">
+            <p class="text-secondary">Player Expenses:</p>
+            <p>$<span>000</span></p>
+          </div>
+          <div class="d-flex justify-content-around ">
+            <p class="text-secondary">Manager</p>
+            <input class="input-class" type="text">
+          </div>
+          <div class="d-flex justify-content-around mt-2">
+            <p class="text-secondary">Coach </p>
+            <input class=" input-class" type="text">
+          </div>
+          <button class="mt-2 py-1 px-4 bg-primary text-white ">Calculate Total</button>
+          <div class="d-flex justify-content-around mt-1">
+            <p class="text-secondary">Player Expenses</p>
+            <p>$<span>000</span></p>
+          </div>
         </div>
       </div>
       </div>
@@ -114,6 +138,7 @@
 <!-- javascript link  -->
 <script src="./js/utilities.js"></script>
 <script src="./js/bestFive.js"></script>
+<script src="./js/calculation.js"></script>
 <footer class="bg-black text-center p-5 text-white">
   <h6>Copyright@2025All</h6>
 </footer>
