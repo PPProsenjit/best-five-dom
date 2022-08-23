@@ -1,9 +1,8 @@
+let list = list.length;
 function checkPlayerListById(elementId) {
     let playerList = document.getElementById(elementId);
     let list = playerList.children;
      return list.length;
-   
-    
 }
 
 function setPlayerNameInListById(elementId, newValue) {
