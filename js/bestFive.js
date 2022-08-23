@@ -1,6 +1,7 @@
-
+//send player information by using addEventListener
 document.getElementById('btn-messi').addEventListener('click', function () {
     const listOfPlayer = checkPlayerListById('selective-player');
+    //check player list 
     if (listOfPlayer > 4) {
         alert("Your five player has been selected!");
         return;

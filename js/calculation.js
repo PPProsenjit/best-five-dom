@@ -1,3 +1,4 @@
+//player cost calculation by using addEventListener
 document.getElementById('btn-calculation').addEventListener('click', function () {
     const currentPlayerExpense = getInputFieldValueById('player-cost');
     const listOfPlayer = checkPlayerListById('selective-player');
@@ -7,7 +8,7 @@ document.getElementById('btn-calculation').addEventListener('click', function ()
     setTextElementValueById('total-player-cost', newPlayerrExpenses);
     
 })
-
+//total cost Calculation by using addEventListener 
 document.getElementById('btn-total').addEventListener('click', function () {
 
     const playerCostTotal = getTextElementValueById('total-player-cost');
