@@ -2,7 +2,7 @@ let list = list.length;
 function checkPlayerListById(elementId) {
     let playerList = document.getElementById(elementId);
     let list = playerList.children;
-     return list.length;
+    return list.length;
 }
 
 function setPlayerNameInListById(elementId, newValue) {
@@ -26,9 +26,10 @@ function getInputFieldValueById(inputFieldId) {
     const inputField = document.getElementById(inputFieldId);
     const inputFieldString = inputField.value;
     const inputFieldValue = parseFloat(inputFieldString);
-
+    console.log(typeof inputFieldValue);
+    inputField.value = '';
     return inputFieldValue;
-
+   
 }
 
 function getTextElementValueById(elementId) {

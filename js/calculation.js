@@ -5,6 +5,7 @@ document.getElementById('btn-calculation').addEventListener('click', function ()
     const newPlayerrExpenses = currentPlayerExpense * listOfPlayer;
 
     setTextElementValueById('total-player-cost', newPlayerrExpenses);
+    
 })
 
 document.getElementById('btn-total').addEventListener('click', function () {
