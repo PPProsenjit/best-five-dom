@@ -1,19 +1,8 @@
 document.getElementById('btn-calculation').addEventListener('click', function () {
-    const currentPlayerExpense = getInputFieldValueById('per-player-cost');
-    const playerList = checkPlayerListById('player-list');
+    const currentPlayerExpense = getInputFieldValueById('player-cost');
+    const listOfPlayer = checkPlayerListById('selective-player');
 
-    const newPlayerrExpenses = currentPlayerExpense * playerList;
+    const newPlayerrExpenses = currentPlayerExpense * listOfPlayer;
 
-    setTextElementValueById('player-expenses-total', newPlayerrExpenses);
-})
-
-document.getElementById('btn-calculate-total').addEventListener('click', function () {
-
-    const playerExpenseTotal = getTextElementValueById('player-expenses-total');
-    const managerCost = getInputFieldValueById('manager-cost');
-    const coachCost = getInputFieldValueById('coach-cost');
-
-    const costTotal = playerExpenseTotal + managerCost + coachCost;
-
-    setTextElementValueById('cost-total', costTotal);
+    setTextElementValueById('total-player-cost', newPlayerrExpenses);
 })

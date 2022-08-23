@@ -1,11 +1,9 @@
 function checkPlayerListById(elementId) {
     let playerList = document.getElementById(elementId);
     let list = playerList.children;
-    if (list.length > 4 ) {
-        alert("player has been selected!");
-        return exit;
-    }
-    return list.length;
+     return list.length;
+   
+    
 }
 
 function setPlayerNameInListById(elementId, newValue) {
